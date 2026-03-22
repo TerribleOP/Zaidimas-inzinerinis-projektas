@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
-
+using UnityEngine.Audio;
 public class PauseMenuScript : MonoBehaviour
 {
     public GameObject Menu;
