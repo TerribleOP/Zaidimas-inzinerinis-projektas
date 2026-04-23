@@ -8,7 +8,13 @@ public class EventDetailsUI : MonoBehaviour
 
     public Transform choicesContainer;
     public GameObject choicePrefab;
+    public int totalState = 0;
+    public GameManager[] allGameManagersOfPanel;
 
+    private void Start()
+    {
+        UpdateTotalStates();
+    }
     public void Show(GameEvent e)
     {
 
@@ -25,6 +31,15 @@ public class EventDetailsUI : MonoBehaviour
             GameObject obj = Instantiate(choicePrefab, choicesContainer);
             obj.SetActive(true);
             obj.GetComponent<ChoiceUI>().Setup(choice);
+        }
+    }
+
+    public void UpdateTotalStates()
+    {
+        totalState = 0;
+        foreach(GameManager man in allGameManagersOfPanel)
+        {
+            totalState += man.state;
         }
     }
 }

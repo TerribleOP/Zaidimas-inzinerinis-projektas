@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
 
     public TMP_Text description;
 
+    public EventDetailsUI totalStateManager;
+    public GameStateManager gameManager;
 
     void Start() {
         UpdateText();
@@ -27,7 +29,6 @@ public class GameManager : MonoBehaviour
             state++;
         }
         UpdateText();
-
     }
 
     public void WorsenState()
@@ -58,5 +59,7 @@ public class GameManager : MonoBehaviour
             description.text = panelDescriptionGood.text;
             description.color = Color.green;
         }
+        totalStateManager.UpdateTotalStates();
+        gameManager.CheckForEndState();
     }
 }
