@@ -7,16 +7,34 @@ public class GameStateManager : MonoBehaviour
     public EventDetailsUI[] allEventDetailsUI;
     public TextMeshProUGUI endInfoText;
     public TextMeshProUGUI stateInfoText;
+    public Money moneyStat;
     public GameObject endScreen;
+    void Start()
+    {
+        foreach (var item in allEventDetailsUI)
+        {
+            item.UpdateTotalStates();
+        }
+    }
+
+    public void CheckForEndStateMoney()
+    {
+        if (moneyStat.money.getMoney() <= 0)
+        {
+            endScreen.SetActive(true);
+            stateInfoText.text = "You lose";
+            endInfoText.text = "Your country had an economic crisis and you were thrown out.";
+        }
+    }
     public void CheckForEndState()
     {
-        /*foreach (var item in allEventDetailsUI)
+        foreach (var item in allEventDetailsUI)
         {
             if (item.totalState >= 6)
             {
                 endScreen.SetActive(true);
                 stateInfoText.text = "You win";
-                switch(item.titleText.ToString())
+                switch(item.titleText.text.ToString())
                 {
                     case "Military":
                         endInfoText.text =
@@ -37,12 +55,13 @@ public class GameStateManager : MonoBehaviour
                     default:
                         break;
                 }
+                return;
             }
             if (item.totalState <= 0)
             {
                 endScreen.SetActive(true);
                 stateInfoText.text = "You lose";
-                switch (item.titleText.ToString())
+                switch (item.titleText.text.ToString())
                 {
                     case "Military":
                         endInfoText.text =
@@ -63,7 +82,8 @@ public class GameStateManager : MonoBehaviour
                     default:
                         break;
                 }
+                return;
             }
-        }*/
+        }
     }
 }

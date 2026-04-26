@@ -41,6 +41,5 @@ public class EventDetailsUI : MonoBehaviour
         {
             totalState += man.state;
         }
-        Debug.Log(totalState);
     }
 }

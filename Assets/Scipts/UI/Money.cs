@@ -7,6 +7,7 @@ public class Money : MonoBehaviour
 {
     public TMP_Text moneyText;
     public MoneyInt money;
+    public GameStateManager gameStateManager;
     void Start()
     {
         money = new MoneyInt(1000);
@@ -17,6 +18,7 @@ public class Money : MonoBehaviour
     {
         money.Add(value); 
         UpdateUI();
+        gameStateManager.CheckForEndStateMoney();
     }
 
     void UpdateUI()
