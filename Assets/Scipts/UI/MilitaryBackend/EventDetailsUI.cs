@@ -8,7 +8,7 @@ public class EventDetailsUI : MonoBehaviour
 
     public Transform choicesContainer;
     public GameObject choicePrefab;
-    public int totalState = 0;
+    public int totalState;
     public GameManager[] allGameManagersOfPanel;
 
     private void Start()
@@ -41,5 +41,6 @@ public class EventDetailsUI : MonoBehaviour
         {
             totalState += man.state;
         }
+        Debug.Log(totalState);
     }
 }

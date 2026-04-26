@@ -10,7 +10,7 @@ public class GameStateManager : MonoBehaviour
     public GameObject endScreen;
     public void CheckForEndState()
     {
-        foreach (var item in allEventDetailsUI)
+        /*foreach (var item in allEventDetailsUI)
         {
             if (item.totalState >= 6)
             {
@@ -64,6 +64,6 @@ public class GameStateManager : MonoBehaviour
                         break;
                 }
             }
-        }
+        }*/
     }
 }

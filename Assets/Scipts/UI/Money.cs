@@ -13,7 +13,14 @@ public class Money : MonoBehaviour
         moneyText.text = money.getMoney().ToString();
     }
 
-    void Update()
+    public void UpdateMoney(int value)
     {
+        money.Add(value); 
+        UpdateUI();
+    }
+
+    void UpdateUI()
+    {
+        moneyText.text = money.getMoney().ToString();
     }
 }
