@@ -9,7 +9,7 @@ public class Money : MonoBehaviour
     public MoneyInt money;
     void Start()
     {
-        money = new MoneyInt(10000);
+        money = new MoneyInt(1000);
         moneyText.text = money.getMoney().ToString();
     }
 

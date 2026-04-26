@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 10f753a34be3ee84294a3ce5dc66e162
+guid: cb54b3b10ce84c84083328e261524330
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8148978495371892968
-    second: castle_large_0
+      213: -4693936121519411779
+    second: Sostine_Su_Event_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: castle_large_0
+      name: Sostine_Su_Event_0
       rect:
         serializedVersion: 2
-        x: 33
-        y: 64
-        width: 438
-        height: 402
+        x: 86
+        y: 28
+        width: 288
+        height: 344
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 817af0dcb3309ee80800000000000000
-      internalID: -8148978495371892968
+      spriteID: dbde57e87f9cbdeb0800000000000000
+      internalID: -4693936121519411779
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      castle_large_0: -8148978495371892968
+      Sostine_Su_Event_0: -4693936121519411779
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

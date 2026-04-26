@@ -7,7 +7,7 @@ public class MoneyInt
 
     public MoneyInt()
     {
-        MoneyInt money = new MoneyInt(10000);
+        MoneyInt money = new MoneyInt(1000);
     }
     public MoneyInt(int money)
     {
