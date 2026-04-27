@@ -8080,6 +8080,21 @@ MonoBehaviour:
   - {fileID: 1403295874}
   - {fileID: 1468142825}
   - {fileID: 531172645}
+  buttonImages:
+  - {fileID: 914285434}
+  - {fileID: 297970050}
+  - {fileID: 914285434}
+  - {fileID: 914285434}
+  - {fileID: 1187634134}
+  - {fileID: 914285434}
+  - {fileID: 914285434}
+  - {fileID: 1382501562}
+  - {fileID: 1187634134}
+  - {fileID: 1286834062}
+  - {fileID: 914285434}
+  - {fileID: 749759292}
+  active: {fileID: -4693936121519411779, guid: cb54b3b10ce84c84083328e261524330, type: 3}
+  passive: {fileID: 4293391926281387795, guid: 0a76712c73e92c84cb54c720d7da815c, type: 3}
 --- !u!1 &530700147
 GameObject:
   m_ObjectHideFlags: 0

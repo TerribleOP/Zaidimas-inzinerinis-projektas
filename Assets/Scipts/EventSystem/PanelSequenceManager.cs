@@ -1,14 +1,19 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PanelSequenceManager : MonoBehaviour
 {
     public List<GameObject> panels;
+    public List<Image> buttonImages;
+    public Sprite active;
+    public Sprite passive;
 
     private int currentIndex = 0;
 
     void Start()
     {
+        SetActive();
         ShowPanel(currentIndex);
     }
 
@@ -33,9 +38,11 @@ public class PanelSequenceManager : MonoBehaviour
 
     public void NextPanel()
     {
+        SetPassive();
         if (currentIndex + 1 >= panels.Count) return;
 
         currentIndex++;
+        SetActive();
         ShowPanel(currentIndex);
     }
 
@@ -50,5 +57,14 @@ public class PanelSequenceManager : MonoBehaviour
     public int GetIndex()
     {
         return currentIndex;
+    }
+    public void SetActive()
+    {
+        if (currentIndex + 1 >= panels.Count) return;
+        buttonImages[currentIndex].sprite = active;
+    }
+    public void SetPassive()
+    {
+        buttonImages[currentIndex].sprite = passive;
     }
 }
