@@ -59,7 +59,5 @@ public class GameManager : MonoBehaviour
             description.text = panelDescriptionGood.text;
             description.color = Color.green;
         }
-        totalStateManager.UpdateTotalStates();
-        gameManager.CheckForEndState();
     }
 }
