@@ -18,7 +18,6 @@ public class Money : MonoBehaviour
     {
         money.Add(value); 
         UpdateUI();
-        gameStateManager.CheckForEndStateMoney();
     }
 
     void UpdateUI()
